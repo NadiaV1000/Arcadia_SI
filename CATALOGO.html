@@ -1,0 +1,406 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+  <title>ARCADIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Index/padding.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script-->
+</head>
+
+<body style="background-color:#FFFFFF;">
+  <center><img src="../Imagenes/LOGO.png" alt="ARCADIA" width="259" height="122"></center>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Index.html">Inicio <span class="glyphicon glyphicon-home"></span></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="../Cliente/Logeo.html">Sesión <span class="glyphicon glyphicon-user"></span></a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" class="btn btn-primary btn-lg">Catálogo <span class="glyphicon glyphicon-book"></span><span class="caret"></span>
+        <ul class="dropdown-menu"></a>
+          <li><a href="../Cliente/CATALOGO.html">Escolares </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Artes Plásticas </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Manualidades </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Oficina </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Tecnología </a></li>
+		    </ul>
+      </li>
+      <li><a href="../Cliente/Carrito.html">Carrito <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      <li><a href="../Cliente/Ayuda.html">Ayuda <span class="glyphicon glyphicon-question-sign"></span></a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="col-xs-3">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="¿Qué estas buscando?" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                <center>Precio Minimo<span class="caret"></span></center>
+              </a>
+            </h1>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <style>
+              .slidecontainer {
+                width: 100%;
+              }
+
+              .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 15px;
+                border-radius: 5px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+              }
+
+              .slider:hover {
+                opacity: 1;
+              }
+
+              .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background: #FFFC33;
+                cursor: pointer;
+              }
+
+              .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background: #4CAF50;
+                cursor: pointer;
+              }
+            </style>
+            </head>
+
+            <body>
+
+              <h1> </h1>
+
+              <div class="slidecontainer">
+                <input type="range" min="10" max="1000" value="10" class="slider" id="myRange">
+                <center>
+                  <p>$<span id="demo"></span></p>
+                </center>
+              </div>
+
+              <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+              </script>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                <center>Marca<span class="caret"></span></center>
+              </a>
+            </h1>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Option 1</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Option 2</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>Option 3</label>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h1 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  <center>Color<span class="caret"></span></center>
+                </a>
+              </h1>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Option 1</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Option 2</label>
+              </div>
+              <div class="checkbox disabled">
+                <label><input type="checkbox" value="" disabled>Option 3</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-9">
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://http2.mlstatic.com/set-lapices-de-color-acuarelables-72-colores-acuarela-D_NQ_NP_803777-MLM27708751248_072018-F.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://http2.mlstatic.com/set-lapices-de-color-acuarelables-72-colores-acuarela-D_NQ_NP_803777-MLM27708751248_072018-F.jpg" alt="Lápices de Colores" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Lápices de Color Profesionales</h4>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://super.walmart.com.mx/images/product-images/img_large/00007073500688L.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://super.walmart.com.mx/images/product-images/img_large/00007073500688L.jpg" alt="Plumones Prismacolor" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Plumones Punta Pincel</h4>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://super.walmart.com.mx/images/product-images/img_large/00750105827408L.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://super.walmart.com.mx/images/product-images/img_large/00750105827408L.jpg" alt="Crayola" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Crayola Twisable</h3>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://super.walmart.com.mx/images/product-images/img_large/00770211180793L.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://super.walmart.com.mx/images/product-images/img_large/00770211180793L.jpg" alt="Cuaderno Norma" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Cuaderno Norma 100 hojas Rayadas</h4>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://super.walmart.com.mx/images/product-images/img_large/00770211182841L.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://super.walmart.com.mx/images/product-images/img_large/00770211182841L.jpg" alt="Cuaderno Coffee Break" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Cuaderno Norma coffee break 100 hojas</h4>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://super.walmart.com.mx/images/product-images/img_large/00750612943088L.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://super.walmart.com.mx/images/product-images/img_large/00750612943088L.jpg" alt="Cuaderno Profesional" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Cuaderno profesional Scribe raya 100 hojas</h4>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://super.walmart.com.mx/images/product-images/img_large/00007164112415L.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://super.walmart.com.mx/images/product-images/img_large/00007164112415L.jpg" alt="Sharpies" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Plumones Permanentes Sharpie Punto Fino</h4>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://super.walmart.com.mx/images/product-images/img_large/00315414899210L.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://super.walmart.com.mx/images/product-images/img_large/00315414899210L.jpg" alt="Juego Geometrico" style="width:100%">
+            </a>
+            <div class="caption">
+              <h4>Juego Geométrico Maped Office Flex</h4>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="thumbnail">
+            <a href="https://http2.mlstatic.com/set-lapices-de-color-acuarelables-72-colores-acuarela-D_NQ_NP_803777-MLM27708751248_072018-F.jpg" target="_blank">
+              <!--a target="_blank"-->
+              <img src="https://http2.mlstatic.com/set-lapices-de-color-acuarelables-72-colores-acuarela-D_NQ_NP_803777-MLM27708751248_072018-F.jpg" alt="Lights" style="width:100%">
+            </a>
+            <div class="caption">
+              <h3>Articulo</h3>
+              <a href="#">
+                <h6>Ver Detalles</h6>
+              </a>
+              <div class="container-fluid">
+                <form>
+                  <div class="col-xs-12">
+                    <center><h4>Cantidad: </h4></center>
+                    <center><input type="number" name="quantity" min="1" max="10" value="1"></center>
+                    <center id="espacio"><button type="button" class="btn btn-success btn-md">Agregar al Carrito<span class="glyphicon glyphicon-shopping-cart"></span></button></center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer style="background-color:#CFD8DC">
+  <div class="container">
+    <div id="espacio" class="row">
+      <!--div class="col-xs-12"-->
+        <!--p>Redes Sociales</p-->
+        <center><img src="../Imagenes/redes.png" alt="Redes Sociales" width="146" height="40"></center>
+      <!--/div-->
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="contacto.html">Contacto	<span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
+      </div>
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="https://www.google.com.mx/maps/place/Facultad+de+Estudios+Superiores+Arag%C3%B3n/@19.4761657,-99.0489292,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1fb1ae7b9f1c7:0x501a154bf16c02f1!8m2!3d19.4761657!4d-99.0467405">Ubicacion<span class="glyphicon glyphicon-map-marker"></span></a></li>
+        </ul>
+      </div>
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="acerca.html">Acerca De Nosotros <span class="	glyphicon glyphicon-briefcase"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
