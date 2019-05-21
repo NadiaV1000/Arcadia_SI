@@ -1,0 +1,118 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+  <title>ARCADIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Index/padding.css">
+  <link rel="stylesheet" href="tabla_compra.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script-->
+</head>
+
+<body style="background-color:#FFFFFF;">
+  <center><img src="../Imagenes/LOGO.png" alt="ARCADIA" width="259" height="122"></center>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../Index/Index.html">Inicio <span class="glyphicon glyphicon-home"></span></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="../Cliente/Logeo.html">Sesión <span class="glyphicon glyphicon-user"></span></a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" class="btn btn-primary btn-lg">Catálogo <span class="glyphicon glyphicon-book"></span><span class="caret"></span>
+        <ul class="dropdown-menu"></a>
+          <li><a href="../Cliente/CATALOGO.html">Escolares </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Artes Plásticas </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Manualidades </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Oficina </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Tecnología </a></li>
+		    </ul>
+      </li>
+      <li><a href="../Cliente/Carrito.html">Carrito <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      <li><a href="../Cliente/Ayuda.html">Ayuda <span class="glyphicon glyphicon-question-sign"></span></a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-9">
+        <h2>Productos seleccionados</h2>
+        <div class="row">
+          <table>
+            <tr>
+              <!--th> </th-->
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+              <th> </th>
+            </tr>
+            <tr>
+              <!--td><center><img src="https://http2.mlstatic.com/set-lapices-de-color-acuarelables-72-colores-acuarela-D_NQ_NP_803777-MLM27708751248_072018-F.jpg" alt="Lápices de Colores" style="width:15%"></center></td-->
+              <td><img src="https://http2.mlstatic.com/set-lapices-de-color-acuarelables-72-colores-acuarela-D_NQ_NP_803777-MLM27708751248_072018-F.jpg" alt="Lápices de Colores" style="width:15%">
+                 Lápices de Colores Acuarelables 72 pzs</td>
+              <td>$30</td>
+              <td><input type="number" name="quantity" min="1" max="10" value="1"></td>
+              <td>$30</td>
+              <td>Borrar</td>
+            </tr>
+            <tr>
+              <td><img src="https://http2.mlstatic.com/set-lapices-de-color-acuarelables-72-colores-acuarela-D_NQ_NP_803777-MLM27708751248_072018-F.jpg" alt="Lápices de Colores" style="width:15%">
+                 Lápices de Colores Acuarelables 72 pzs</td>
+              <td>$30</td>
+              <td><input type="number" name="quantity" min="1" max="50" value="1"></td>
+              <td>$30</td>
+              <td>Borrar</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+          <div class="col-xs-3">
+            <h2>DATOS DE LA COMPRA <span class="glyphicon glyphicon-list-alt"></span></h2>
+            <h4>Subtotal:</h4>
+            <h4>Envío Regular:</h4>
+            <h4>Total:</h4>
+            <h6>*Todos los precios incluyen IVA</h6>
+            <center><a href="carrito_2.html" class="btn btn-success" role="button"><h4>Siguiente Paso <span class="glyphicon glyphicon-shopping-cart"></span></h4></a></center>
+                <!--h5>Finalizar </h5>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="usr" placeholder="Código del cupón">
+                  <center><button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-gift"></span></button></center>
+                </div-->
+          </div>
+        </div>
+
+</body>
+<footer style="background-color:#CFD8DC">
+  <div class="container">
+    <div id="espacio" class="row">
+      <!--div class="col-xs-12"-->
+        <!--p>Redes Sociales</p-->
+        <center><img src="../Imagenes/redes.png" alt="Redes Sociales" width="146" height="40"></center>
+      <!--/div-->
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="contacto.html">Contacto	<span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
+      </div>
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="https://www.google.com.mx/maps/place/Facultad+de+Estudios+Superiores+Arag%C3%B3n/@19.4761657,-99.0489292,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1fb1ae7b9f1c7:0x501a154bf16c02f1!8m2!3d19.4761657!4d-99.0467405"
+          target="_blank">Ubicacion<span class="glyphicon glyphicon-map-marker"></span></a></li>
+        </ul>
+      </div>
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="acerca.html">Acerca De Nosotros <span class="	glyphicon glyphicon-briefcase"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

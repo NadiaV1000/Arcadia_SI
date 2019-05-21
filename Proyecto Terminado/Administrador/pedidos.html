@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head style="background-color:#AAAAAA;">
+  <title>ARCADIA S.C</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:#FFFFFF;">
+  <center><img src="../Imagenes/LOGO.png" alt="ARCADIA" width="259" height="122"></center>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Navegacion_admin.html">Inicio<span class="glyphicon glyphicon-home"></span></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="agregar_trabajador.html">Agregar Trabajador <span class="glyphicon glyphicon-user"></span></a></li>
+      <li><a href="ventas.html">Resumen de Ventas <span class="glyphicon glyphicon-book"></span></a></li>
+      <li><a href="catalog_admin.html">Catálogo <span class="glyphicon glyphicon-book"></span></a></li>
+      <li><a href="pedidos.html">Pedidos <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      <li><a href="ayuda_admin.html">Ayuda <span class="glyphicon glyphicon-question-sign"></span></a></li>
+    </ul>
+    </div>
+  </nav>
+
+</body>
+<!--body style="background-color:#FFFFFF;">
+  <center><img src="../Imagenes/LOGO.png" alt="ARCADIA" width="259" height="122"></center-->
+<div class="container">
+  <div class="row">
+  <!--div class="col-xs-6"-->
+  <h2>Nuevo Pedido</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+     <label for="ID Pedido">ID Pedido:</label>
+      <input type="ID Pedido" class="form-control" id="ID Pedido" placeholder="Ingresa el ID del Pedido" name="ID Pedido">
+    </div>
+    <div class="form-group">
+      <label for="producto">Producto:</label>
+      <input type="producto" class="form-control" id="producto" placeholder="Ingresa el producto" name="producto">
+    </div>
+    <div class="form-group">
+      <label for="cantidad">Cantidad Producto:</label>
+      <input type="cantidad" class="form-control" id="cantidad" placeholder="Ingresa la cantidad" name="cantidad">
+    </div>
+	<div class="form-group">
+     <label for="pago">Forma de Pago:</label>
+      <input type="pago" class="form-control" id="pago" placeholder="Ingresa la forma de pago" name="pago">
+    </div>
+	  <div class="form-group">
+      <label for="proveedor">Proveedor:</label>
+      <input type="proveedor" class="form-control" id="proveedor" placeholder="Proveedor" name="proveedor">
+    </div>
+	<div class="form-group">
+      <label for="Fecha del Pedido">Fecha del Pedido:</label>
+      <input type="Fecha del Pedido" class="form-control" id="Fecha del Pedido" placeholder="Fecha del Pedido" name="Fecha del Pedido">
+    </div>
+	<div class="form-group">
+      <label for="Fecha de Entrega">Fecha de Entrega:</label>
+      <input type="Fecha de Entrega" class="form-control" id="Fecha de Entrega" placeholder="Fecha de Entrega" name="Fecha de Entrega">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="recordar"> Recordar datos</label>
+    </div>
+    <button type="enviar" class="btn btn-default">Enviar</button>
+  </form>
+</div>
+<div class="col-xs-6">
+
+</body>
+<footer style="background-color:#CFD8DC">
+  <div class="container">
+    <div class="row">
+      <!--div class="col-xs-12"-->
+        <!--p>Redes Sociales</p-->
+        <center><img src="../Imagenes/redes.png" alt="Redes Sociales" width="146" height="40"></center>
+      <!--/div-->
+      <div class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="contacto.html">Contacto	<span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="https://www.google.com.mx/maps/place/Facultad+de+Estudios+Superiores+Arag%C3%B3n/@19.4761657,-99.0489292,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1fb1ae7b9f1c7:0x501a154bf16c02f1!8m2!3d19.4761657!4d-99.0467405">Ubicacion<span class="glyphicon glyphicon-map-marker"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="acerca.html">Acerca De Nosotros <span class="glyphicon glyphicon-briefcase"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
+
+
+</html>

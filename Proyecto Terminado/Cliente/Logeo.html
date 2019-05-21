@@ -1,0 +1,152 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+  <title>ARCADIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Index/padding.css">
+  <link rel="stylesheet" href="modal.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script-->
+</head>
+
+<body style="background-color:#FFFFFF;">
+  <center><img src="../Imagenes/LOGO.png" alt="ARCADIA" width="259" height="122"></center>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../Index/Index.html">Inicio <span class="glyphicon glyphicon-home"></span></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="../Cliente/Logeo.html">Sesión <span class="glyphicon glyphicon-user"></span></a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" class="btn btn-primary btn-lg">Catálogo <span class="glyphicon glyphicon-book"></span><span class="caret"></span>
+        <ul class="dropdown-menu"></a>
+          <li><a href="../Cliente/CATALOGO.html">Escolares </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Artes Plásticas </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Manualidades </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Oficina </a></li>
+          <li><a href="../Cliente/CATALOGO.html">Tecnología </a></li>
+		    </ul>
+      </li>
+      <li><a href="../Cliente/Carrito.html">Carrito <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      <li><a href="../Cliente/Ayuda.html">Ayuda <span class="glyphicon glyphicon-question-sign"></span></a></li>
+    </ul>
+    </div>
+  </nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-xs-6">
+  <h2>Inicio de Sesión</h2>
+  <!--form action="/action_page.php"-->
+    <div class="form-group">
+      <label for="usuario">Correo:</label>
+      <input type="text" class="form-control" id="Correo" placeholder="Ingresa tu correo" name="correo">
+    </div>
+    <div class="form-group">
+      <label for="contraseña">Contraseña:</label>
+      <input type="text" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña" name="contraseña">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="recordar"> Recordar datos</label>
+    </div>
+    <a href="../Index/Index.html" class="btn btn-primary" role="button">Entrar :D</a>
+    <!--button type="button" class="btn btn-primary">Entrar :D</button-->
+    <!--button id="myBTN" class="btn btn-danger">Olvide Mi Contraseña :(</button-->
+    <button id="myBtn" class="btn btn-danger">Olvide mi contraseña :(</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Te hemos enviado un correo para solicitar el cambio de contraseña.</h3>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+  <!--/form-->
+</div>
+<div class="col-xs-6">
+  <h2>Registrarse</h2>
+  <form action="/action_page.php">
+    <div class="row">
+    <div class="form-group">
+      <div class="col-xs-12">
+        <label for="clientes">* Nombre:</label>
+        <input type="text" class="form-control" id="Nombre" placeholder="Ingresa tu nombre" name="Nombre">
+      </div>
+      <div class="col-xs-6">
+        <label for="clientes">* Apellido Paterno:</label>
+        <input type="text" class="form-control" id="Apellido_paterno" placeholder="Ingresa tu apellido paterno" name="Apellido_paterno">
+      </div>
+      <div class="col-xs-6">
+        <label for="clientes">* Apellido Materno:</label>
+        <input type="text" class="form-control" id="Apellido_materno" placeholder="Ingresa tu apellido materno" name="Apellido_materno">
+      </div>
+      <div class="col-xs-6">
+        <label for="clientes">Teléfono fijo:</label>
+        <input type="text" class="form-control" id="Telefono_fijo" placeholder="Introduce tu número de teléfono fijo" name="Telefono_fijo">
+      </div>
+      <div class="col-xs-6">
+        <label for="clientes">Teléfono móvil:</label>
+        <input type="text" class="form-control" id="Telefono_movil" placeholder="Introduce tu número de teléfono móvil" name="Telefono_movil">
+      </div>
+      <div class="col-xs-12">
+        <label for="clientes">* Correo:</label>
+        <input type="text" class="form-control" id="Correo" placeholder="Ingresa un correo valido" name="Correo">
+      </div>
+      <div class="col-xs-12">
+        <label for="clientes">*Contraseña:</label>
+        <input type="text" class="form-control" id="Contraseña" placeholder="Ingresa una contraseña" name="Contraseña">
+      </div>
+      <div class="col-xs-12">
+        <label for="clientes">* Dirección:</label>
+        <input type="text" class="form-control" id="Direccion" placeholder="Estado/Provincia/Condado" name="Direccion">
+      </div>
+      <div class="col-xs-12">
+        <label for="clientes">RFC:</label>
+        <input type="text" class="form-control" id="RFC" placeholder="Puedes ingresar 12 ó 13 carácteres" name="RFC">
+      </div>
+      <div class="col-xs-6" id="espacio">
+        <h6>* Campos Obligatorios</h6>
+      </div>
+    </div>
+    </div>
+<div class="row">
+  <center><button type="button" class="btn btn-success">Registrarme :)</button></center>
+  </form>
+</div>
+</div>
+</div>
+
+</body>
+<footer style="background-color:#CFD8DC">
+  <div class="container-fluid">
+    <div id="espacio" class="row">
+      <!--div class="col-xs-12"-->
+        <!--p>Redes Sociales</p-->
+        <center><img src="../Imagenes/redes.png" alt="Redes Sociales" width="146" height="40"></center>
+      <!--/div-->
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="contacto.html">Contacto	<span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
+      </div>
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="https://www.google.com.mx/maps/place/Facultad+de+Estudios+Superiores+Arag%C3%B3n/@19.4761657,-99.0489292,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1fb1ae7b9f1c7:0x501a154bf16c02f1!8m2!3d19.4761657!4d-99.0467405"
+          target="_blank">Ubicacion<span class="glyphicon glyphicon-map-marker"></span></a></li>
+        </ul>
+      </div>
+      <div id="espacio" class="col-xs-4">
+        <ul class="list-inline text-center">
+          <li><a href="acerca.html">Acerca De Nosotros <span class="	glyphicon glyphicon-briefcase"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

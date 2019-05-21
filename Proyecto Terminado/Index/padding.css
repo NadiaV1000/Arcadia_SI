@@ -1,0 +1,65 @@
+#espacio {
+  padding: 15pt;
+}
+
+.contenedor_bowie{
+    font-family: Impact, fantasy;
+    color:#FFFFFF;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 5px 5px red;
+}
+
+.texto-encima_bowie{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado_bowie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenedor_art{
+    font-family: Impact, fantasy;
+    color:#FFFFFF;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 5px 5px BLUEVIOLET;
+}
+
+.texto-encima_art{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado_art{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor_off{
+    font-family: Impact, fantasy;
+    color:#FFFFFF;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 5px 5px DARKTURQUOISE;
+}
+
+.texto-encima_off{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado_off{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
